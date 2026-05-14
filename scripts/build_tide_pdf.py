@@ -17,40 +17,41 @@ CHROME_MAC = (
 )
 
 PRINT_CSS = """
-/* PDF layout — matches rapids PDF styling */
+/* PDF layout — compact single landscape page */
 @page {
   size: landscape;
-  margin: 10mm 12mm;
+  margin: 6mm 8mm;
 }
 body {
   margin: 0;
-  padding: 12mm 14mm 14mm;
+  padding: 5mm 6mm 6mm;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
 main { max-width: none; }
 h1 {
-  font-size: 1.25rem;
+  font-size: 11pt;
   font-weight: 700;
-  margin: 0 0 6px;
+  margin: 0 0 3px;
   color: #1a365d;
   letter-spacing: -0.02em;
-  border-bottom: 2px solid #2c5282;
-  padding-bottom: 8px;
+  border-bottom: 1px solid #2c5282;
+  padding-bottom: 4px;
 }
 .subtitle {
-  font-size: 0.88rem;
-  margin: 10px 0 12px;
+  font-size: 7.25pt;
+  margin: 4px 0 5px;
   color: #374151;
-  line-height: 1.45;
-  max-width: 72rem;
+  line-height: 1.3;
+  max-width: none;
 }
 .back { display: none !important; }
 .pdf-dl { display: none !important; }
 table {
   width: 100%;
   max-width: none;
-  font-size: 9.5pt;
+  font-size: 7pt;
+  line-height: 1.15;
   border: 1px solid #94a3b8;
 }
 thead th {
@@ -59,32 +60,32 @@ thead th {
   background: #334155 !important;
   color: #f8fafc !important;
   font-weight: 600;
-  padding: 6px 8px;
+  padding: 3px 5px;
   border-color: #475569;
 }
 th, td {
   border-color: #cbd5e0;
-  padding: 4px 7px;
+  padding: 2px 4px;
 }
 tbody tr:nth-child(even) td { background: #f1f5f9 !important; }
 tbody tr:nth-child(odd) td { background: #fff !important; }
-.num { font-size: 9pt; }
+.num { font-size: inherit; }
 .source-note {
-  margin-top: 10px;
-  font-size: 8.5pt;
+  margin-top: 4px;
+  font-size: 6.5pt;
   color: #4b5563;
-  line-height: 1.4;
+  line-height: 1.25;
 }
 footer.tide-disclaimer {
   position: static !important;
-  margin-top: 12px;
-  padding: 10px 12px;
-  font-size: 8pt;
-  line-height: 1.45;
+  margin-top: 5px;
+  padding: 5px 7px;
+  font-size: 6.25pt;
+  line-height: 1.3;
   color: #1f2937;
   background: #f8fafc !important;
   border: 1px solid #cbd5e0;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: none !important;
 }
 footer.tide-disclaimer p {
